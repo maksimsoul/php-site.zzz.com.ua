@@ -1,5 +1,5 @@
 <?php
-    require_once "database.php";
-    require_once "models/model.php";
+    require_once "components/database.php";
+    require_once "models/articles_all.php";
 
     include "views/articles.php";

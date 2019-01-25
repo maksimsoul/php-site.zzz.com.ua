@@ -11,16 +11,26 @@
 </head>
 
 <body>
-<div class="container">
-    <h1>Статьи о PHP и MySQL</h1>
 
-        <div>
-            <h2>Тема статьи: <?=$article['title']?></h2>
-            <h3>Рубрика: <?=$article['category']?></h3>
-            <em>Опубликовано: <?=$article['date']?></em>
-            <p><?=$article['text']?></p>
-        </div>
+    <header>
+        <h1>Статьи о PHP и MySQL</h1>
+    </header>
 
-</div>
+    <div class="container">
+
+            <div>
+                <h2>Тема статьи: <?=$article['title']?></h2>
+                <h3>Рубрика: <?=$article['category']?></h3>
+                <em>Опубликовано: <?=$article['date']?></em>
+                <p><?=$article['text']?></p>
+            </div>
+
+    </div>
+
+    <footer>
+        <p>
+            PHP - programming language
+        </p>
+    </footer>
 </body>
 </html>

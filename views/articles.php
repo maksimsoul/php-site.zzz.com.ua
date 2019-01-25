@@ -11,9 +11,27 @@
 </head>
 
 <body>
-<div class="container">
-    <h1>Статьи о PHP и MySQL</h1>
 
+<header>
+    <div id="headphp" col-lg-6 col-lg-offset-0>
+        Статьи о PHP и MySQL
+    </div>
+
+    <div class="head" col-lg-6>
+        <img src="images/php-00441489844a0103eae71ba2fe15244c.png" alt="PHP + MySQL" class="imgphp">
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="">Главная</a></li>
+        <li><a href="">Переменные</a></li>
+        <li><a href="">Функции</a></li>
+        <li><a href="">Циклы</a></li>
+        <li><a href="">ООП</a></li>
+    </ul>
+</nav>
+<div class="container">
     <?php foreach ($articles as $article): ?>
         <div>
             <h2><a href="controllers/article.php?id=<?=$article['id']?>">Тема статьи: <?=$article['title']?></a></h2>
@@ -23,5 +41,10 @@
         </div>
     <?php endforeach ?>
 </div>
+<footer>
+    <p>
+        PHP - programming language
+    </p>
+</footer>
 </body>
 </html>

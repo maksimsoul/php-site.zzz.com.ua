@@ -1,14 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
 body {
     background-image: url("../images/kartinkijane.ru-22793.jpg");
     background-size: cover;
 }
 
-h1 {
-    color: orange;
-    padding: 40px 0 60px 100px;
+header {
+    background: #1c3f77;
+}
+
+.imgphp {
+    height: 30%;
+    width: 50%;
+    margin-left: 50px;
+
+}
+
+#headphp {
+    color: #e6ead5;
+    font-size: 50px;
+    margin-right: 60px;
+}
+
+nav {
+    background-color: white;
+    padding: 20px 150px;
+}
+
+nav>ul>li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -22,4 +94,16 @@ em {
 
 p {
     margin-bottom: 40px;
+}
+
+footer {
+    background: #1c3f77;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+footer>p {
+    color: white;
+    font-size: 28px;
+    padding: 50px 0 20px 40%;
 }

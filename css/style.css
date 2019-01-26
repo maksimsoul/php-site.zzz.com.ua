@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Anton;
+    src: url(../fonts/Anton-Regular.ttf);
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,49 +56,57 @@ header {
     background: #1c3f77;
 }
 
-.imgphp {
-    height: 30%;
-    width: 50%;
-    margin-left: 50px;
-
+#imgphp {
+    width: 80%;
+    padding: 30px 0;
 }
 
 #headphp {
     color: #e6ead5;
     font-size: 50px;
-    margin-right: 60px;
+    font-family: Anton;
 }
 
-nav {
-    background-color: white;
-    padding: 20px 150px;
+#navphp {
+    background-color: #343a40;
 }
 
-nav>ul>li {
-    display: inline-block;
+.navbar-nav {
     font-size: 20px;
-    margin-left: 30px;
 }
 
 a {
     text-decoration: none;
 }
 
-h2 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+a:hover {
+    text-decoration: none;
+    display: block;
+    color: #17a2b8;
 }
 
-h3 {
-    margin-bottom: 20px;
+.articles {
+    border: 2px solid #9999ff;
+    background-color: #ccffff;
+    font-family: Roboto;
 }
 
-em {
-    margin-bottom: 20px;
+.article {
+    padding: 20px 0 20px 10px;
+}
+
+.date {
+    font-size: 18px;
+    margin-left: 80%;
+}
+
+.art_text {
+    padding: 15px;
 }
 
 p {
     margin-bottom: 40px;
+    font-size: 20px;
 }
 
 footer {
@@ -105,5 +118,5 @@ footer {
 footer>p {
     color: white;
     font-size: 28px;
-    padding: 50px 0 20px 40%;
+    padding: 50px 0 20px 30%;
 }

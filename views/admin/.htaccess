@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile /var/www/html/php-site.zzz.com.ua/views/admin/.htpasswd
+Require valid-user

@@ -1,2 +1,2 @@
 <?php
-    include "controllers/first_controller.php";
+    include "first_controller.php";

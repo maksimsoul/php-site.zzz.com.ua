@@ -5,10 +5,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="views/admin/index.php">Добавить статью<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="admin.php">Добавить статью<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Обратная связь</a>
+                        <a class="nav-link" href="feedback.php">Обратная связь</a>
                     </li>
                 </ul>
             </div>
@@ -19,5 +19,7 @@
         Copyright © 2019 The PHP-site Group
     </p>
 </footer>
+
+<script src="js/feedback.js"></script>
 </body>
 </html>

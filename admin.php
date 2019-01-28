@@ -1,7 +1,6 @@
 <?php
-
-require_once "../../components/database.php";
-require_once "../../models/articles_all.php";
+require_once "components/database.php";
+require_once "models/articles_all.php";
 
 if (!empty($_POST)) {
     new_article($link, $_POST['title'], $_POST['category'], $_POST['date'], $_POST['text']);
@@ -16,10 +15,10 @@ if (!empty($_POST)) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="shortcut icon" href="../../images/php_logo.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="images/php_logo.jpg" type="image/jpg">
 
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>PHP и MySQL</title>
 </head>
 
@@ -30,7 +29,7 @@ if (!empty($_POST)) {
         <div class="row">
 
             <div class="col-lg-5 col-lg-offset-0">
-                <a href="../../index.php"><img src="../../images/php.png" alt="PHP + MySQL" id="imgphp"></a>
+                <a href="index.php"><img src="images/php.png" alt="PHP + MySQL" id="imgphp"></a>
             </div>
 
             <div id="headphp" class="col-lg-7 align-self-center">
@@ -44,7 +43,7 @@ if (!empty($_POST)) {
 
 
 <div class="container">
-    <form method="post" action="index.php">
+    <form method="post" action="admin.php">
 
         <h2 class="add_art text-center">Добавить статью</h2>
 

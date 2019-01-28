@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>PHP и MySQL</title>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>

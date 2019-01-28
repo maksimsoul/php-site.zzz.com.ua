@@ -4,7 +4,7 @@ $(document).ready(function(){
         var form_email   = $('#form_email').val();
         var form_message = $('#form_message').val();
         $.ajax({
-            url: "post.php",
+            url: "models/post.php",
             type: "post",
             dataType: "json",
             data: {

@@ -45,22 +45,18 @@
                     <a class="nav-link" href="index.php">Главная<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contr_dannie.php">Данные</a>
+                    <a class="nav-link" href="controller_dannie.php">Данные</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contr_funkcii.php">Функции</a>
+                    <a class="nav-link" href="controller_funkcii.php">Функции</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contr_cikli.php">Циклы</a>
+                    <a class="nav-link" href="controller_cikli.php">Циклы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contr_oop.php">ООП</a>
+                    <a class="nav-link" href="controller_oop.php">ООП</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
 
     </nav>
@@ -73,7 +69,7 @@
                 <h2 class="col-lg-8"><a href="article.php?id=<?=$article['id']?>"><?=$article['title']?></a></h2>
                 <h3 class="col-lg-4">Рубрика: <?=$article['category']?></h3>
             </div>
-            <p class="font-italic date">Опубликовано: <?=$article['date']?></p>
+            <p class="font-italic date text-right">Опубликовано: <?=$article['date']?></p>
             <hr>
             <p class="art_text"><?=$article['text']?></p>
         </div>

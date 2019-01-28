@@ -1,12 +1,3 @@
-<?php
-require_once "components/database.php";
-require_once "models/articles_all.php";
-
-if (!empty($_POST)) {
-    new_article($link, $_POST['title'], $_POST['category'], $_POST['date'], $_POST['text']);
-}
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -43,7 +34,7 @@ if (!empty($_POST)) {
 
 
 <div class="container">
-    <form method="post" action="admin.php">
+    <form method="post" action="controller_admin.php">
 
         <h2 class="add_art text-center">Добавить статью</h2>
 
@@ -78,4 +69,3 @@ if (!empty($_POST)) {
 </footer>
 </body>
 </html>
-

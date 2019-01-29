@@ -12,7 +12,7 @@ if($_POST['form_email'] == "")   $errors[] = "Поле <span>Ваш e-mail</span
        $message  = "Имя пользователя: " . $_POST['form_name'] . "<br>";
        $message .= "E-mail пользователя: " . $_POST['form_email'] . "<br><br>";
        $message .= "Текст письма: " . $_POST['form_message'];
-       send_mail($message); // отправим письмо
+       sendMail($message); // отправим письмо
        // выведем сообщение об успехе
        $msg_box = "<span>Спасибо за обращение, сообщение успешно отправлено! <br> В течении 24 часов я Вам отвечу!<br></span><br>";
 
@@ -31,7 +31,7 @@ if($_POST['form_email'] == "")   $errors[] = "Поле <span>Ваш e-mail</span
 
 
    // функция отправки письма
-   function send_mail($message){
+   function sendMail($message){
        // почта, на которую придет письмо
        $mail_to = "maksimisgreat@gmail.com";
        // тема письма

@@ -2,6 +2,7 @@
 require_once "components/database.php";
 require_once "models/articles_all.php";
 
-$articles = all_articles_oop($link);
+$category = 'ООП';
+$articles = categoryArticles($link, $category);
 
 include "views/oop.php";

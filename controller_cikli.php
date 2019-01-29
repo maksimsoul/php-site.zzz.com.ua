@@ -2,6 +2,7 @@
 require_once "components/database.php";
 require_once "models/articles_all.php";
 
-$articles = all_articles_cikli($link);
+$category = 'Циклы';
+$articles = categoryArticles($link, $category);
 
 include "views/cikli.php";

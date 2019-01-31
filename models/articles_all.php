@@ -1,5 +1,6 @@
 <?php
-    function getAllArticles($link) {
+    function getAllArticles($link)
+    {
         $query = "SELECT * FROM articles ORDER BY id DESC LIMIT 5";
         $result = mysqli_query($link, $query);
 
@@ -14,7 +15,8 @@
         return $articles;
     }
 
-    function categoryArticles($link, $category) {
+    function categoryArticles($link, $category)
+    {
         $query = "SELECT * FROM articles WHERE category = '$category' ORDER BY id DESC";
         $result = mysqli_query($link, $query);
 
@@ -29,7 +31,8 @@
         return $articles;
     }
 
-    function getArticle($link, $id_article) {
+    function getArticle($link, $id_article)
+    {
         $query = sprintf("SELECT * FROM articles WHERE id=%d", (int)$id_article);
         $result = mysqli_query($link, $query);
 
@@ -41,7 +44,8 @@
         return $article;
     }
 
-    function newArticle($link, $title, $category, $date, $text) {
+    function newArticle($link, $title, $category, $date, $text)
+    {
         $t = "INSERT INTO articles (title, category, date, text) VALUES ('%s', '%s', '%s', '%s')";
 
         $query = sprintf($t, mysqli_real_escape_string($link, $title),

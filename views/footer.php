@@ -2,8 +2,6 @@
     <div id="navphp">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
 
-            <a class="navbar-brand" href="index.php">Главная</a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,7 +20,7 @@
         </nav>
     </div>
     <p class="text-center">
-        Copyright © 2019 The PHP-site Group
+        php-site.zzz.com.ua <br> 2019
     </p>
 </footer>
 
